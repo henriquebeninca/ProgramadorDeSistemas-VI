@@ -54,7 +54,7 @@ void chefeFinal(Personagem *p, int *menu);
 
 int adicionarItem(Personagem *p, int item);
 void nomeItem(int item);
-
+void BossSecreto(Personagem *p, int *menu);
 
 
 int main(){
@@ -137,7 +137,12 @@ int main(){
                 chefeFinal(&jogador,&opcao);
                 break;
 
+			case 999:
+                BossSecreto(&jogador,&opcao);
+                break;
+				
             case 0:
+			
                 printf("\nFim da aventura!\n");
                 break;
 
@@ -722,9 +727,11 @@ void chefeFinal(Personagem *p,int *menu){
         printf("Parabens, Heroi!\n");
         printf("Voce derrotou o Dragao das Sombras!\n");
         printf("O Reino de C-Nai foi salvo!\n");
+		printf("\nMas tenha calma aventureiro\n");
+		printf("Sua jornada ainda nao acabou!\n");
         printf("=================================\n");
 
-        *menu = 0;
+        *menu = 1;
 
     }
 
@@ -768,4 +775,50 @@ void nomeItem(int item){
     else if(item == ESCUDO)
         printf("Escudo");
 
+}
+
+void BossSecreto(Personagem *p,int *menu){
+
+    Monstro secret;
+
+
+    if(p->nivel < 10){
+
+        printf("\nComo voce descobriu isso??\n");
+		printf("\nVoce nao esta preparado!\n");
+        printf("Necessario: Nivel 10\n");
+        printf("Seu nivel: %d\n",p->nivel);
+
+        return;
+    }
+	
+	secret.nome[0]='A';
+    secret.nome[1]='D';
+    secret.nome[2]='M';
+    secret.nome[3]='\0';
+
+    secret.vida = 1000;
+    secret.ataque = 100;
+    secret.xp = 0;
+    secret.ouro = 1000;
+
+
+    printf("\nO ADM apareceu!\n");
+    printf("\nVoce sera julgado!\n");
+
+
+    combate(p,secret);
+	
+	if(p->vida > 0){
+
+        printf("\n=================================\n");
+        printf("Parabens, Heroi!\n");
+        printf("Voce derrotou o ADM!\n");
+        printf("Voce e uma lenda incompreendida!\n");
+        printf("=================================\n");
+
+        *menu = 0;
+
+    }
+	
 }

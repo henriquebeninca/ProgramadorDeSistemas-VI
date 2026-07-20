@@ -1,0 +1,7 @@
+Exercícios / Atividades
+
+1-Criar uma struct Livro com: título, autor e preço; Declarar 1 livro e preencher os campos e imprimir os dados.
+
+2-Criar um vetor de 5 alunos, ler os dados via scanf e depois imprimir.
+
+3-Criar uma struct Pessoa que contém uma struct Endereco. Preencher os dados e depois, utilizando ponteiros, imprimir na tela.

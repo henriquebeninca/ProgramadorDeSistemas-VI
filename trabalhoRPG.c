@@ -710,7 +710,7 @@ void chefeFinal(Personagem *p,int *menu){
 
     dragao.vida = 300;
     dragao.ataque = 25;
-    dragao.xp = 999;
+    dragao.xp = 99;
     dragao.ouro = 999;
 
 
@@ -800,7 +800,7 @@ void BossSecreto(Personagem *p,int *menu){
     secret.vida = 1000;
     secret.ataque = 100;
     secret.xp = 0;
-    secret.ouro = 1000;
+    secret.ouro = 0;
 
 
     printf("\nO ADM apareceu!\n");

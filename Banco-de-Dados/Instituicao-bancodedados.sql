@@ -87,3 +87,19 @@ CREATE TABLE Certificados
 	data_emissao DATE
 );
 
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('Nicolas', 'programação', 'manhã', 'nicolas213@gmail.com', 67676767 );
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('João', 'programação', 'manhã', 'joãozinho224@gmail.com', 67676768 );
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('Marcos', 'programação', 'manhã', 'mcgamer654@gmail.com', 67676769 );
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('Gaudâncio', 'programação', 'tarde', 'guridoalfalto76@gmail.com', 67676770 );
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('Nicanor', 'programação', 'manhã', 'nicadosul321@gmail.com', 67676771 );
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('Florisbela', 'programação', 'tarde', 'florisbelaa324@gmail.com', 67676772 );
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('Jaldete', 'programação', 'manhã', 'jaldetinha3423@gmail.com', 67676773 );
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('Vitor', 'programação', 'tarde', 'choraagoraridepois2323@gmail.com', 67676774 );
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('Luciano Hulk', 'programação', 'tarde', 'reais1000000@gmail.com', 67676775 );
+INSERT INTO Estudantes (Nome, Curso, Periodo, Email, matricula) VALUES ('Fausto', 'programação', 'manhã', 'cacetadas3234@gmail.com', 67676776 );
+
+
+INSERT INTO Departamento (Codigo, Nome, Area_atuacao) VALUES (23123278, 'Departamento Acadêmico', 'Ensino médio');
+
+
+INSERT INTO Inscricao (idEstudantes, Data_da_inscricao, Situacao_da_participacao, idCertificados) VALUES ('Nicolas', '12/07/2026', '') 
